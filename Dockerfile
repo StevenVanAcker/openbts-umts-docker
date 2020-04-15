@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y build-essential mdm autoconf libtool libuhd003.010.003 git g++-5 gcc-5 \
-		libzmq3-dev pkg-config libosip2-dev libortp-dev libusb-1.0-0-dev libtool-bin libsqlite3-dev libreadline-dev uhd_host
+		libzmq3-dev pkg-config libosip2-dev libortp-dev libusb-1.0-0-dev libtool-bin libsqlite3-dev libreadline-dev uhd-host
 
 RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 42
 RUN update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 42
